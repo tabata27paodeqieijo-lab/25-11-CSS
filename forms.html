@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header class="contact-header">
+        <div class="contact-header__logo">
+            <h1>Tech<span>Solutions</span></h1>
+        </div>
+        <nav class="contact-header__nav"><a href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a
+                href="#contato">Contato</a></nav>
+    </header>
+    <main class="contact-page" id="inicio">
+        <section class="contact-card" id="contato">
+            <div class="contact-card__header" id="sobre">
+                <h2 class="contact-card__title">Entre em <span>contato</span></h2>
+                <p class="contact-card__subtitle">Estamos prontos para te atender.Envie sua mensagem!</p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <fieldset class="contact-form__fieldset">
+                    <legend>Formulário de contato</legend>
+                    <div class="contact-form__group"><label for="nome" class="contact-form__label">Nome</label><input
+                            type="text" id="nome" name="nome" class="contact-form__input" placeholder="Seu nome"
+                            required /></div>
+                    <div class="contact-form__group"><label for="email" class="contact-form__label">E-mail</label><input
+                            type="email" id="email" name="email" class="contact-form__input" placeholder="seu@email.com"
+                            required /></div>
+                    <div class="contact-form__group contact-form__group--full"><label for="assunto"
+                            class="contact-form__label">Assunto</label><select id="assunto" name="assunto"
+                            class="contact-form__input" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="servicos">Informações sobre serviços</option>
+                            <option value="orcamento">Solicitar orçamento</option>
+                            <option value="duvidas">Dúvidas</option>
+                            <option value="outros">Outros</option>
+                        </select></div>
+                    <div class="contact-form__group contact-form__group--full"><label for="mensagem"
+                            class="contact-form__label">Mensagem</label><textarea id="mensagem" name="mensagem"
+                            class="contact-form__input" placeholder="Digite sua mensagem..." rows="5"
+                            required></textarea></div>
+                    <div class="contact-form__actions contact-form__group--full"><button type="submit"
+                            class="btn btn--primary">Enviar mensagem</button></div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="contact-footer">
+        <p>© 2025 TechSolutions. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
